@@ -147,8 +147,9 @@ if (document.getElementById ("f3").value == s
 return "t3";
 }
  
-cument.getElementById ("t3").value == s){
-return "s3";
+if (document.getElementById ("t3").value == s
+   && document.getElementById ("f3").value == s){
+  return "s3";
 }
 
 if (document.getElementById ("s3").value == s
@@ -213,7 +214,7 @@ document.getElementById(moveCompId).value = "0";
 document.getElementById(moveCompId).innerHTML = "0";
 _Move = "firstPlayer";
 }
-function MovePlayer (_id) { // функция принимающая id кнопки
+function MovePlayer(_id) { // функция принимающая id кнопки
 var _GameOver = true; // конец игры
 console.log(_id, _Move, document.getElementById(_id)); //
 if (document.getElementById(_id).value == " ") {
