@@ -193,6 +193,16 @@ return GetRandomId();
 }
 return randomId;
 }
+
+function DisplayAlert() {
+  if (CheckWin("x")){
+  alert ("Крестики Выиграли!");
+  }
+  if (CheckWin("0")){
+  alert ("Нолики Выиграли!");
+  }
+}
+
 function MoveComp () {
 var moveCompId = "";
 var zeroWinId = zeroWin ("0");
@@ -212,7 +222,8 @@ moveCompId = randomId;
 console.log(randomId);
 document.getElementById(moveCompId).value = "0";
 document.getElementById(moveCompId).innerHTML = "0";
-_Move = "firstPlayer";
+DisplayAlert();
+ _Move = "firstPlayer";
 }
 function MovePlayer(_id) { // функция принимающая id кнопки
 var _GameOver = true; // конец игры
@@ -239,12 +250,7 @@ if (document.getElementById( "t" + i).value == " ") {
 _GameOver = false;
 }
 }
-if (CheckWin("x")){
-alert ("Крестики Выиграли!");
-}
-if (CheckWin("0")){
-alert ("Нолики Выиграли!");
-}
+DisplayAlert();
 if (_Move = "secondPlayer"){
 MoveComp();
 }
