@@ -157,7 +157,7 @@ if (document.getElementById ("s3").value == s
 return "f3";
 } 
 
-if (document.getElementById ("f1").value == "s
+if (document.getElementById ("f1").value == s
 && document.getElementById ("s2").value == s){
 return "t3";
 }
