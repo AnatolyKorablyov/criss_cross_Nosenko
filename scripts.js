@@ -142,15 +142,10 @@ if (document.getElementById ("s2").value == s
 return "f2";
 }
 
-
-
 if (document.getElementById ("f3").value == s
 && document.getElementById ("s3").value == s){
 return "t3";
 }
-
-if (document.getElementById ("f3").value == s
-&& do
  
 cument.getElementById ("t3").value == s){
 return "s3";
@@ -160,7 +155,6 @@ if (document.getElementById ("s3").value == s
 && document.getElementById ("t3").value == s){
 return "f3";
 } 
-
 
 if (document.getElementById ("f1").value == "s
 && document.getElementById ("s2").value == s){
