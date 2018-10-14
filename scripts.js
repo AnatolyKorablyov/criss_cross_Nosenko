@@ -179,7 +179,7 @@ _GameOver = false;
 }
 }
 DisplayAlert();
-if (_Move = "secondPlayer"){
+if (_Move == "secondPlayer"){
 MoveComp();
 }
 console.log(_GameOver);
